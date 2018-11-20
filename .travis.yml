@@ -6,16 +6,14 @@ env:
   - RELEASE_TAG="release-$TRAVIS_BUILD_NUMBER"
 if: tag IS blank
 
+
 jobs:
   include:
     - stage: build and publish
       language: java
-
-      jdk: openjdk8
-
+      jdk: openjdk11
       addons:
         mariadb: '10.2'
-
       install: skip
       before_script:
         - mysql -uroot < databases/tracker/create_databases.sql
