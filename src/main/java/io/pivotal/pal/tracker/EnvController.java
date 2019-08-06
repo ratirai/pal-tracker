@@ -26,7 +26,7 @@ public class EnvController {
         this.cfInstanceIndex = cfInstanceIndex;
         this.cfInstanceAddress = cfInstanceAddress;
     }
-
+//env
     @GetMapping("/env")
     public Map<String, String> getEnv() {
         Map<String, String> env = new HashMap<>();
