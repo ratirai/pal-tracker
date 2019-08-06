@@ -3,7 +3,8 @@ applications:
   - name: pal-tracker
     path: build/libs/pal-tracker.jar
     routes:
-      - route: pal-tracker-balanced-chipmunk.cfapps.io
+      - route: pal-tracker-reflective-emu.cfapps.io
+      #pal-tracker-balanced-chipmunk.cfapps.io
         #pal-tracker-reflective-emu.cfapps.io
     env:
       WELCOME_MESSAGE: Hello from the review environment
