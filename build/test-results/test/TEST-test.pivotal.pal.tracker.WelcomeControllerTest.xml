@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="test.pivotal.pal.tracker.WelcomeControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-06T19:30:33" hostname="pal4-OptiPlex-7050" time="0.001">
+<testsuite name="test.pivotal.pal.tracker.WelcomeControllerTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-07T11:09:02" hostname="pal4-OptiPlex-7050" time="0.0">
   <properties/>
-  <testcase name="itSaysHello" classname="test.pivotal.pal.tracker.WelcomeControllerTest" time="0.001"/>
+  <testcase name="itSaysHello" classname="test.pivotal.pal.tracker.WelcomeControllerTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
