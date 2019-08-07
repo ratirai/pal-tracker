@@ -23,7 +23,7 @@
 <tr>
 <td>
 <div class="infoBox" id="tests">
-<div class="counter">1</div>
+<div class="counter">0</div>
 <p>tests</p>
 </div>
 </td>
@@ -41,7 +41,7 @@
 </td>
 <td>
 <div class="infoBox" id="duration">
-<div class="counter">0.019s</div>
+<div class="counter">-</div>
 <p>duration</p>
 </div>
 </td>
@@ -51,7 +51,7 @@
 </td>
 <td>
 <div class="infoBox success" id="successRate">
-<div class="percent">100%</div>
+<div class="percent">-</div>
 <p>successful</p>
 </div>
 </td>
@@ -77,20 +77,25 @@
 <th>Result</th>
 </tr>
 </thead>
-<tr>
-<td class="success">exampleTest</td>
-<td>0.019s</td>
-<td class="success">passed</td>
-</tr>
 </table>
 </div>
 <div id="tab1" class="tab">
 <h2>Standard output</h2>
 <span class="code">
-<pre>2019-08-07 16:39:01.429  INFO 15392 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Neither @ContextConfiguration nor @ContextHierarchy found for test class [test.pivotal.pal.trackerapi.WelcomeApiTest], using SpringBootContextLoader
-2019-08-07 16:39:01.430  INFO 15392 --- [    Test worker] o.s.t.c.support.AbstractContextLoader    : Could not detect default resource locations for test class [test.pivotal.pal.trackerapi.WelcomeApiTest]: no resource found for suffixes {-context.xml, Context.groovy}.
-2019-08-07 16:39:01.435  INFO 15392 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
-2019-08-07 16:39:01.437  INFO 15392 --- [    Test worker] .b.t.c.SpringBootTestContextBootstrapper : Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@742eefc9, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@468ba4e6, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@1cb5c07f, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3ea081e1, org.springframework.test.context.support.DirtiesContextTestExecutionListener@3df3615b, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@26c44e97, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@14c0c408, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2ed5f0f8, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@80ab5c0, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@cbef2a0]
+<pre>19:41:40.718 [Test worker] DEBUG org.springframework.test.context.junit4.SpringJUnit4ClassRunner - SpringJUnit4ClassRunner constructor called with [class test.pivotal.pal.trackerapi.WelcomeApiTest]
+19:41:40.719 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating CacheAwareContextLoaderDelegate from class [org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate]
+19:41:40.720 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating BootstrapContext using constructor [public org.springframework.test.context.support.DefaultBootstrapContext(java.lang.Class,org.springframework.test.context.CacheAwareContextLoaderDelegate)]
+19:41:40.721 [Test worker] DEBUG org.springframework.test.context.BootstrapUtils - Instantiating TestContextBootstrapper for test class [test.pivotal.pal.trackerapi.WelcomeApiTest] from class [org.springframework.boot.test.context.SpringBootTestContextBootstrapper]
+19:41:40.722 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [test.pivotal.pal.trackerapi.WelcomeApiTest], using SpringBootContextLoader
+19:41:40.723 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [test.pivotal.pal.trackerapi.WelcomeApiTest]: class path resource [test/pivotal/pal/trackerapi/WelcomeApiTest-context.xml] does not exist
+19:41:40.724 [Test worker] DEBUG org.springframework.test.context.support.AbstractContextLoader - Did not detect default resource location for test class [test.pivotal.pal.trackerapi.WelcomeApiTest]: class path resource [test/pivotal/pal/trackerapi/WelcomeApiTestContext.groovy] does not exist
+19:41:40.725 [Test worker] INFO org.springframework.test.context.support.AbstractContextLoader - Could not detect default resource locations for test class [test.pivotal.pal.trackerapi.WelcomeApiTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+19:41:40.729 [Test worker] DEBUG org.springframework.test.context.support.ActiveProfilesUtils - Could not find an 'annotation declaring class' for annotation type [org.springframework.test.context.ActiveProfiles] and class [test.pivotal.pal.trackerapi.WelcomeApiTest]
+19:41:40.733 [Test worker] DEBUG org.springframework.boot.test.context.SpringBootTestContextBootstrapper - @TestExecutionListeners is not present for class [test.pivotal.pal.trackerapi.WelcomeApiTest]: using defaults.
+19:41:40.734 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+19:41:40.735 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@4c9128cc, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@d1ca380, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3f616826, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@11c78429, org.springframework.test.context.support.DirtiesContextTestExecutionListener@54550995, org.springframework.test.context.transaction.TransactionalTestExecutionListener@3cbdb03c, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@8a9cfd5, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@25e2e425, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@598748ad, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@86a3ff1, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@4efb8e4e, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@7c8a8878]
+19:41:40.736 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved @ProfileValueSourceConfiguration [null] for test class [test.pivotal.pal.trackerapi.WelcomeApiTest]
+19:41:40.736 [Test worker] DEBUG org.springframework.test.annotation.ProfileValueUtils - Retrieved ProfileValueSource type [class org.springframework.test.annotation.SystemProfileValueSource] for class [test.pivotal.pal.trackerapi.WelcomeApiTest]
 </pre>
 </span>
 </div>
@@ -102,7 +107,7 @@
 <input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
 </label>
 </div>Generated by 
-<a href="http://www.gradle.org">Gradle 4.4.1</a> at 7 Aug, 2019 4:39:02 PM</p>
+<a href="http://www.gradle.org">Gradle 4.4.1</a> at 7 Aug, 2019 7:41:41 PM</p>
 </div>
 </div>
 </body>

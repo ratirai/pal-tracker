@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="test.pivotal.pal.tracker.JdbcTimeEntryRepositoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2019-08-07T14:11:40" hostname="pal4-OptiPlex-7050" time="0.79">
+  <properties/>
+  <testcase name="listFindsAllTimeEntries" classname="test.pivotal.pal.tracker.JdbcTimeEntryRepositoryTest" time="0.79"/>
+  <system-out><![CDATA[19:41:40.855 [Test worker] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing SQL statement [DELETE FROM time_entries]
+19:41:40.866 [Test worker] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+19:41:41.318 [Test worker] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+19:41:41.320 [Test worker] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing SQL statement [INSERT INTO time_entries (id, project_id, user_id, date, hours) VALUES (999, 123, 321, '2017-01-09', 8), (888, 456, 678, '2017-01-08', 9)]
+19:41:41.320 [Test worker] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+19:41:41.394 [Test worker] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+19:41:41.396 [Test worker] DEBUG org.springframework.jdbc.core.JdbcTemplate - Executing SQL query [SELECT id, project_id, user_id, date, hours FROM time_entries]
+19:41:41.397 [Test worker] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Fetching JDBC Connection from DataSource
+19:41:41.441 [Test worker] DEBUG org.springframework.jdbc.datasource.DataSourceUtils - Returning JDBC Connection to DataSource
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
