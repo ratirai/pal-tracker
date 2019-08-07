@@ -14,10 +14,8 @@ public class PalTrackerApplication {
         SpringApplication.run(PalTrackerApplication.class, args);
     }
 
-    @Autowired
-    private DataSource dataSource;
     @Bean
-    public TimeEntryRepository timeEntryRepository() {
+    public TimeEntryRepository timeEntryRepository(DataSource dataSource) {
        return new JdbcTimeEntryRepository(dataSource);
     }
 }
